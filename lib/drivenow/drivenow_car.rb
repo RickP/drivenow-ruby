@@ -36,6 +36,15 @@ module Drivenow
 			@address ||= json['position']['address']
 		end
 
+		# Gets Latitude 
+		def latitude
+			@latitude ||=json['position']['latitude']
+		end
+		
+		# ... and Longitude for super-cool Google Map markers
+		def longitude
+			@longitude ||=json['position']['longitude']
+		end
 		# Gets if it's an automatic car or manual
 		def automatic?
 			@automatic ||= json['auto'] == 'Y'
