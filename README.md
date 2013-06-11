@@ -22,3 +22,5 @@ Example
 	puts car.position.inspect
 	puts car.fuel_state
 	puts car.clean
+	puts car.latitude
+	puts car.longitude
