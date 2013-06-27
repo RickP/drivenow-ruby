@@ -31,7 +31,7 @@ module Drivenow
 		end
 		
 		def rememberthename
-			@name ||= "#{json['personalName']}"
+			@remberthename ||= "#{json['personalName']}"
 		end
 
 		# Gets the current address
