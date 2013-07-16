@@ -33,6 +33,10 @@ module Drivenow
 		def rememberthename
 			@remberthename ||= "#{json['personalName']}"
 		end
+		
+		def ecar?
+			@ecar ||= json['fuelType'] == 'ELE'	
+		end
 
 		# Gets the current address
 		# Example: "Biedersteiner Straße 29, 80802 München"
