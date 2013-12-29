@@ -16,8 +16,8 @@ module Drivenow
 			cities = Agent.cities
 			unless options[:city].nil?
 				url_params = "cit=#{cities[options[:city]]}"
-			end
-			options = { :uri => "https://www.drive-now.com/php/metropolis/json.vehicle_filter?#{url_params}" }.merge(options)
+			end		    
+			options = { :uri => "https://de.drive-now.com/php/metropolisws/mobile.find_free_veh?is_drive-now_dot_com=1&language=de_DE&tenant={url_params}" }.merge(options)
 
 			page = open(options[:uri]).read
 			cars = JSON(page)["rec"]["vehicles"]["vehicles"]
