@@ -41,7 +41,9 @@ module Drivenow
 				:duesseldorf => "1293",
 				:berlin => "6099", 
 				:muenchen => "4604",
-				:koeln => "1774"
+				:koeln => "1774",
+				:hamburg => "40065",
+				:san_francisco => "4259"
 			}
 		end
 	end
